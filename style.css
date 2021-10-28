@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+body {
+  background: url("images/bg-pattern-desktop.svg");
+}
+
+/* header */
+header {
+  display: flex;
+  height: 80px;
+  background-color: #fff;
+  justify-content: flex-end;
+  align-items: center;
+}
+.logo {
+  font-family: "Indie Flower", cursive;
+  font-size: 40px;
+  margin: auto;
+  margin-left: 60px;
+  color: #8c0d2f;
+}
+
+/* nav bar */
+ul {
+  list-style: none;
+  display: flex;
+  text-transform: uppercase;
+}
+ul li {
+  padding: 10px;
+  margin: 18px 20px 0 0;
+}
+ul li a {
+  text-decoration: none;
+  color: #000;
+}
+ul li a:hover {
+  text-decoration: none;
+  color: #000;
+}
+#btn1 {
+  background-color: #8c0d2f;
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  margin-right: 50px;
+}
+#btn1 a {
+  color: #fff;
+}
+#btn1 a:hover {
+  text-decoration: none;
+}
+
+/* content */
+.container1 {
+  display: flex;
+}
+.card1 {
+  background-color: #8c0d2f;
+  width: 50%;
+  text-align: center;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
