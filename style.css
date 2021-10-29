@@ -15,7 +15,6 @@ body {
 header {
   display: flex;
   height: 80px;
-  position: static;
   justify-content: center;
   align-items: center;
 }
@@ -108,7 +107,7 @@ hr {
 .me {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 70%;
   margin: auto;
   align-items: center;
   padding-top: 40px;
@@ -121,15 +120,34 @@ hr {
   padding: 20px;
   width: 50%;
 }
-/* .set{
-  display: flex; 
-}
-.set ul{
-  display: flex;
-  flex-direction: column;
-}  */
 
 /* clients */
+.clients {
+  text-align: center;
+}
+.testimonials {
+  display: flex;
+  justify-content: center;
+}
+.card4 {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px 4px #f6a2b8;
+  margin: 8px;
+  height: 22rem;
+}
+h5 {
+  text-align: left;
+}
+.imgClient{
+width: 17rem;
+height: 12rem;
+padding: 2px;
+}
+.card4:hover{
+  box-shadow: 0px 0px 2px 2px #fbd0dc;
+}
 .counters {
   display: flex;
   width: 80%;
@@ -151,6 +169,20 @@ hr {
 .counterName {
   padding: 20px;
   color: #fff;
+}
+
+/* work */
+.work {
+  margin: 50px;
+  text-align: center;
+}
+.subHeading {
+  margin: 40px;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* contact */
