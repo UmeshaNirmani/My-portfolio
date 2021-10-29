@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <!-- stylesheet -->
     <link rel="stylesheet" href="./style.css">
     <title>Umesha Nirmani</title>
 </head>
@@ -26,45 +29,116 @@
         <!-- <button id="btn1"><a href="">contact</a></button> -->
     </header>
 
-    <div class="container1">
+    <section class="container1">
         <div class="card1">
-            Hi! I'm Umesha Nirmani. <br>
-            <p id="block2"> I build things for the web. <br>
-                Designer | Developer </p>
-            <div class="services">
-                mn karana services web development, ui/ux ...
+            <h3> Hi! I'm Umesha Nirmani. </h3> <br>
+            <h3 id="block2"> I build things for the web. <br>
+                Designer | Developer </h3>
+        </div>
+        <div class="services">
+            <h3>
+                <hr> What can I do?
+                <hr>
+            </h3>
+            <div class="card" style="width: 18rem;">
+                <img class="imgService" src="./images/web.svg" alt="web">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="imgService" src="./images/design.svg" alt="design">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="imgService" src="./images/writing.svg" alt="writing">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="imgService" src="./images/desktop.svg" alt="design">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
             </div>
         </div>
         <div class="picture">
             <img src="./images/my.png" class="img-fluid" alt="picture">
         </div>
-    </div>
+    </section>
 
-    <div class="about">
-        <div class="skills">
-            animated ewa tikak yanawa fast, responsive, dynamic wage ewa
+    <section class="about">
+        <h2>
+            <hr> ABOUT
+            <hr>
+        </h2>
+        <div class="me">
+            <h3>A Little Bit About Me</h3>
+            Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS! <br>
+            Here are a few technologies I’ve been working with recently:
+            <ul class="mySkills">
+                <div class="set">
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>PHP</li>
+                    <li>Python</li>
+                </div>
+                <div class="set">
+                    <li>VB.net</li>
+                    <li>C#</li>
+                    <li>MySQL</li>
+                    <li>Node.js</li>
+                    <li>WordPress</li>
+                </div>
+            </ul>
         </div>
-        <div class="technology">
-            mata puluwan skills tika js, css, html ...
-        </div>
+    </section>
 
-        <div class="resume">
-            button to download resume
-        </div>
-    </div>
-
-    <div class="work">
+    <section class="work">
+        <h2>
+            <hr> work
+            <hr>
+        </h2>
         <div class="projects">
-            mn krapu projects
+            <h3> See my works </h3>
         </div>
-        <div class="blog">
-            mn liyapu blogs
-        </div>
-    </div>
+    </section>
 
-    <div class="contact">
+    <section class="clients">
+        <div class="testimonials">
+            <h3> What clients are saying? </h3>
+        </div>
+        <div class="counters">
+            <div>
+                <div class="counter" data-target="50">0</div>
+                <h3 class="counterName">Clients</h3>
+            </div>
+            <div>
+                <div class="counter" data-target="30">0</div>
+                <h3 class="counterName">Projects Completed</h3>
+            </div>
+            <div>
+                <div class="counter" data-target="20">0</div>
+                <h3 class="counterName">Projects Ongoing</h3>
+            </div>
+            <div>
+                <div class="counter" data-target="38">0</div>
+                <h3 class="counterName">Client Satisfaction</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>
+            <hr>contact
+            <hr>
+        </h2>
         form ekak name, email, message
-    </div>
+    </section>
 
     <footer>
         <div class="footericons">
@@ -76,10 +150,10 @@
             <img class="ficons" src="./images/facebook.svg" alt="facebook">
         </div>
         <hr> <br>
-        <p>Design and built by Umesha Nirmani</p>
+        <p>Designed and Built by Umesha Nirmani</p>
     </footer>
+    <script src="./script.js"></script>
 
 </body>
-<script src="./script.js"></script>
 
 </html>
