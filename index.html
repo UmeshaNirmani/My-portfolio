@@ -17,7 +17,6 @@
 <body>
 
     <header>
-        <!-- <img src="./images/logo.ico" class="logo" alt="logo"> -->
         <nav>
             <ul>
                 <li><a href=""> home </a></li>
@@ -26,9 +25,9 @@
                 <li><a href="">contact</a></li>
             </ul>
         </nav>
-        <!-- <button id="btn1"><a href="">contact</a></button> -->
     </header>
 
+    <!-- homepage -->
     <section class="container1">
         <div class="card1">
             <h3> Hi! I'm Umesha Nirmani. </h3> <br>
@@ -70,9 +69,10 @@
         </div>
     </section>
 
+    <!-- about page -->
     <section class="about">
-        <h2>
-            <hr> ABOUT
+        <h2 class="headings">
+            <hr>&nbsp ABOUT &nbsp
             <hr>
         </h2>
         <div class="me">
@@ -98,9 +98,10 @@
         </div>
     </section>
 
+    <!-- work page -->
     <section class="work">
-        <h2>
-            <hr> work
+        <h2 class="headings">
+            <hr>&nbsp WORK &nbsp
             <hr>
         </h2>
         <div class="projects">
@@ -132,12 +133,24 @@
         </div>
     </section>
 
+    <!-- contact page -->
     <section class="contact">
-        <h2>
-            <hr>contact
+        <h2 class="headings">
+            <hr>&nbsp CONTACT &nbsp
             <hr>
         </h2>
-        form ekak name, email, message
+        <form class="form" action="post">
+            <h3>Get In Touch</h3>
+            <label for="name">Name</label>
+            <input type="text">
+            <label for="text">Email</label>
+            <input type="email" placeholder="umeshanirmani@gmail.com">
+            <label for="subject">Subject</label>
+            <input type="text">
+            <label id="message" for="message">Message
+                <textarea name="message" cols="100" rows="6"></textarea>
+            </label>
+        </form>
     </section>
 
     <footer>
@@ -149,7 +162,7 @@
             <img class="ficons" src="./images/medium.svg" alt="medium">
             <img class="ficons" src="./images/facebook.svg" alt="facebook">
         </div>
-        <hr> <br>
+        <hr id="line"> <br>
         <p>Designed and Built by Umesha Nirmani</p>
     </footer>
     <script src="./script.js"></script>

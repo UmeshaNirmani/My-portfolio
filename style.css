@@ -90,6 +90,15 @@ ul li a:hover:after {
   position: absolute;
 }
 
+.headings {
+  display: flex;
+  justify-content: center;
+}
+hr {
+  width: 10%;
+  border: #000 solid 1px;
+}
+
 /* about */
 .mySkills {
   text-transform: none;
@@ -119,6 +128,39 @@ ul li a:hover:after {
   color: #fff;
 }
 
+/* contact */
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+form > h3 {
+  text-align: center;
+}
+label {
+  margin-top: 10px;
+}
+input {
+  border: none;
+  border-bottom: #000 solid 1px;
+  outline: none;
+  padding: 5px 0 5px 0;
+  background-color: transparent;
+}
+textarea {
+  outline: none;
+  border: none;
+  border-bottom: #000 solid 1px;
+  background-color: transparent;
+}
+#message{
+  display: flex;
+  flex-direction: column;
+}
+
 /* footer */
 footer {
   display: flex;
@@ -128,11 +170,12 @@ footer {
 }
 .ficons {
   padding: 10px;
+  margin: 5px;
 }
 .ficons:hover {
-  font-size: large;
+  width: 50px;
 }
-hr {
+#line {
   width: 30%;
   border: solid #000 1px;
 }
