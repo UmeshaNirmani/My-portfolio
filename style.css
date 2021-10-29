@@ -14,13 +14,15 @@ body {
 /* header */
 nav {
   display: flex;
-  /* position: fixed;
+  position: fixed;
   width: 100%;
-  z-index: 1; */
+  z-index: 3;
   height: 80px;
   justify-content: center;
   background-color: #fff;
   align-items: center;
+  top: 0;
+  bottom: 0;
 }
 
 /* nav bar */
@@ -28,10 +30,10 @@ nav ul {
   list-style: none;
   display: flex;
   text-transform: uppercase;
+  justify-content: space-around;
 }
 nav ul li {
-  padding: 10px;
-  margin: 18px 20px 0 0;
+  padding: 15px;
 }
 nav ul li a {
   position: relative;
@@ -60,10 +62,10 @@ nav ul li a:hover:after {
 }
 
 /* home content */
-.container1 {
+#section1 {
   display: flex;
-  padding: 20px;
   justify-content: center;
+  margin-top: 100px;
 }
 .card1 {
   text-align: center;
@@ -74,7 +76,7 @@ nav ul li a:hover:after {
   justify-content: center;
   color: #8c0d2f;
   font-family: "Josefin Sans", sans-serif;
-  display: none;
+  /* display: none; */
 }
 #block2 {
   color: #000;
@@ -96,6 +98,7 @@ nav ul li a:hover:after {
 .headings {
   display: flex;
   justify-content: center;
+  padding-top: 100px;
 }
 hr {
   width: 10%;
@@ -118,25 +121,25 @@ hr {
   margin: auto;
   align-items: center;
   padding-top: 40px;
-  padding-bottom: 40px;
 }
 .container2 {
   display: flex;
 }
 .card2 {
   padding: 20px;
+  padding-bottom: 0;
   width: 50%;
 }
 
 /* work */
-.work {
-  margin: 50px;
+#section3 {
   text-align: center;
 }
 .projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 50px;
 }
 .card3 {
   width: 18rem;
@@ -146,7 +149,7 @@ hr {
   transition: 0.4s ease-out;
 }
 .card3:hover {
-  transform: translateY(20px);
+  transform: translateY(10px);
 }
 .card3:before {
   content: "";
@@ -157,8 +160,8 @@ hr {
   width: 100%;
   height: 100%;
   background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
     rgba(140, 13, 47, 1) 35%,
     rgba(140, 13, 47, 1) 100%
   );
@@ -178,7 +181,7 @@ hr {
   transform: translateY(30px);
   transition: 0.5s all;
 }
-.card3:hover .card-body3{
+.card3:hover .card-body3 {
   opacity: 1;
   transform: translateY(20px);
 }
@@ -211,6 +214,7 @@ hr {
 .testimonials {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .card4 {
   padding: 8px;
@@ -237,20 +241,21 @@ h5 {
   margin: auto;
   justify-content: center;
   align-items: center;
-  height: 250px;
   background-color: #8c0d2f;
   border: none;
   border-radius: 5px;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  height: 250px;
 }
 .counter {
   color: #fff;
   text-align: center;
   font-size: 30px;
+  padding: 10px;
 }
 .counterName {
-  padding: 20px;
+  padding: 10px;
   color: #fff;
 }
 
@@ -260,7 +265,6 @@ h5 {
   flex-direction: column;
   width: 50%;
   margin: auto;
-  margin-top: 30px;
   margin-bottom: 100px;
 }
 form > h3 {
