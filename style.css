@@ -21,26 +21,26 @@ header {
 }
 
 /* nav bar */
-ul {
+nav ul {
   list-style: none;
   display: flex;
   text-transform: uppercase;
 }
-ul li {
+nav ul li {
   padding: 10px;
   margin: 18px 20px 0 0;
 }
-ul li a {
+nav ul li a {
   position: relative;
   text-decoration: none;
   color: #000;
 }
-ul li a:hover {
+nav ul li a:hover {
   text-decoration: none;
   color: #8c0d2f;
   transition: 0.9s;
 }
-ul li a:after {
+nav ul li a:after {
   position: absolute;
   content: "";
   bottom: 0;
@@ -52,7 +52,7 @@ ul li a:after {
   background-color: #8c0d2f;
   transition: transform 250ms;
 }
-ul li a:hover:after {
+nav ul li a:hover:after {
   transform: translateX(-50%) scaleX(1);
 }
 
@@ -101,8 +101,33 @@ hr {
 
 /* about */
 .mySkills {
-  text-transform: none;
+  list-style-image: url(./images/play.svg);
+  columns: 2;
+  list-style-position: inside;
 }
+.me {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.container2 {
+  display: flex;
+}
+.card2 {
+  padding: 20px;
+  width: 50%;
+}
+/* .set{
+  display: flex; 
+}
+.set ul{
+  display: flex;
+  flex-direction: column;
+}  */
 
 /* clients */
 .counters {
@@ -156,7 +181,7 @@ textarea {
   border-bottom: #000 solid 1px;
   background-color: transparent;
 }
-#message{
+#message {
   display: flex;
   flex-direction: column;
 }
