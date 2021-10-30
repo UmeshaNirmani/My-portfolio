@@ -289,7 +289,7 @@ h5 {
   display: flex;
   width: 80%;
   margin: auto;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: #8c0d2f;
   border: none;
@@ -298,14 +298,13 @@ h5 {
   margin-bottom: 20px;
   height: 250px;
 }
-.counter {
+.counters .counter {
   color: #fff;
   text-align: center;
   font-size: 30px;
   padding: 10px;
 }
 .counterName {
-  padding: 10px;
   color: #fff;
 }
 
@@ -358,4 +357,16 @@ footer {
 #line {
   width: 30%;
   border: solid #000 1px;
+}
+
+/* onscroll effects */
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
 }

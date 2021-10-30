@@ -1,34 +1,59 @@
-// window.addEventListener("scroll", () => {
-//   const counters = document.querySelectorAll(".counter");
-//   const speed = 10000000000;
+//onscroll event
+window.addEventListener("scroll", funReveal);
 
-//   counters.forEach((counter) => {
-//     const updateCount = () => {
-//       const target = +counter.getAttribute("data-target");
-//       const cnt = +counter.innerText;
+function funReveal() {
+  var reveals = document.querySelectorAll(".reveal");
 
-//       const inc = target / speed;
+  for (var i = 0; i < reveals.length; i++) {
+    var windowheight = window.innerHeight;
+    var revealtop = reveals[i].getBoundingClientRect().top;
+    var revealpoint = 150;
 
-//       console.log(cnt);
+    if (revealtop < windowheight - revealpoint) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
 
-//       if (cnt < target) {
-//         counter.innerText = Math.ceil(cnt + inc);
-//         setTimeout(updateCount, 1);
-//       } else {
-//         cnt.innerText = target;
-//       }
-//     };
+// counter
+const counters = document.querySelectorAll(".counter");
+const speed = 10000000000;
 
-//     updateCount();
-//   });
-// });
+counters.forEach((counter) => {
+  const updateCount = () => {
+    const target = +counter.getAttribute("data-target");
+    const cnt = +counter.innerText;
 
-document
-  .getElementById("btn1")
-  .addEventListener("click", function () {
-    document.getElementsByClassName("slider")[0].classList.add("active");
-  });
+    const inc = target / speed;
+
+    console.log(cnt);
+
+    if (cnt < target) {
+      counter.innerText = Math.ceil(cnt + inc);
+      setTimeout(updateCount, 1);
+    } else {
+      cnt.innerText = target;
+    }
+  };
+  updateCount();
+});
+
+//popup window animation
+document.getElementById("btn1").addEventListener("click", function () {
+  document.getElementsByClassName("slider")[0].classList.add("active");
+});
 
 document.getElementById("close").addEventListener("click", function () {
   document.getElementsByClassName("slider")[0].classList.remove("active");
 });
+
+function reload() {
+  var container = document.getElementById("cc");
+  var content = container.innerHTML;
+  container.innerHTML = content;
+
+  //this line is to watch the result in console , you can remove it later
+  console.log("Refreshed");
+}

@@ -5,13 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <!-- favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
     <!-- stylesheet -->
     <link rel="stylesheet" href="./style.css">
+
+    <!-- font awesome -->
     <script src="https://kit.fontawesome.com/90e489a80d.js" crossorigin="anonymous"></script>
+
     <title>Umesha Nirmani</title>
 </head>
 
@@ -180,28 +186,30 @@
         </div>
 
         <section class="clients">
-            <div class="counters">
-                <div>
-                    <div class="counter" data-target="50">0</div>
-                    <h3 class="counterName">Clients</h3>
+            <a href="javascript: reload()">
+                <div class="counters" id="cc">
+                    <div>
+                        <div class="counter" data-target="50">0</div>
+                        <h4 class="counterName">Clients</h4>
+                    </div>
+                    <div>
+                        <div class="counter" data-target="30">0</div>
+                        <h4 class="counterName">Completed Projects</h4>
+                    </div>
+                    <div>
+                        <div class="counter" data-target="20">0</div>
+                        <h4 class="counterName">Ongoing Projects</h4>
+                    </div>
+                    <div>
+                        <div class="counter" data-target="38">0</div>
+                        <h4 class="counterName">Happy Customers</h4>
+                    </div>
                 </div>
-                <div>
-                    <div class="counter" data-target="30">0</div>
-                    <h3 class="counterName">Projects Completed</h3>
-                </div>
-                <div>
-                    <div class="counter" data-target="20">0</div>
-                    <h3 class="counterName">Projects Ongoing</h3>
-                </div>
-                <div>
-                    <div class="counter" data-target="38">0</div>
-                    <h3 class="counterName">Client Satisfaction</h3>
-                </div>
-            </div>
+            </a>
 
             <h3 class="subHeading"> What clients are saying? </h3>
             <div class="testimonials">
-                <div class="card4" style="width: 18rem;">
+                <div class="card4 reveal" style="width: 18rem;">
                     <img class="imgClient" src="./images/daniel-xavier.jpg" alt="design">
                     <div class="card-body">
                         <span class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
@@ -209,7 +217,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="card4" style="width: 18rem;">
+                <div class="card4 reveal" style="width: 18rem;">
                     <img class="imgClient" src="./images/christina-morillo.jpg" alt="design">
                     <div class="card-body">
                         <span class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
@@ -217,7 +225,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="card4" style="width: 18rem;">
+                <div class="card4 reveal" style="width: 18rem;">
                     <img class="imgClient" src="./images/justin-shaifer.jpg" alt="design">
                     <div class="card-body">
                         <span class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
