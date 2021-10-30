@@ -19,7 +19,7 @@ function funReveal() {
 
 // counter
 const counters = document.querySelectorAll(".counter");
-const speed = 10000000000;
+const speed = 1000;
 
 counters.forEach((counter) => {
   const updateCount = () => {
@@ -32,7 +32,7 @@ counters.forEach((counter) => {
 
     if (cnt < target) {
       counter.innerText = Math.ceil(cnt + inc);
-      setTimeout(updateCount, 1);
+      setTimeout(updateCount, 10);
     } else {
       cnt.innerText = target;
     }
@@ -48,12 +48,3 @@ document.getElementById("btn1").addEventListener("click", function () {
 document.getElementById("close").addEventListener("click", function () {
   document.getElementsByClassName("slider")[0].classList.remove("active");
 });
-
-function reload() {
-  var container = document.getElementById("cc");
-  var content = container.innerHTML;
-  container.innerHTML = content;
-
-  //this line is to watch the result in console , you can remove it later
-  console.log("Refreshed");
-}
