@@ -64,6 +64,7 @@ nav ul li a:hover:after {
 /* home content */
 #section1 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 100px;
 }
@@ -93,7 +94,6 @@ nav ul li a:hover:after {
   align-items: center;
   justify-content: center;
   color: #8c0d2f;
-  /* visibility: hidden; */
 }
 #block2 {
   color: #000;
@@ -117,6 +117,8 @@ nav ul li a:hover:after {
 }
 .services {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .fa-times-circle {
   align-self: flex-end;
@@ -188,7 +190,6 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 50px;
 }
 .card3 {
   width: 18rem;
@@ -263,6 +264,7 @@ hr {
 }
 .testimonials {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 50px;
 }
@@ -361,13 +363,13 @@ footer {
 }
 
 /* onscroll effects */
-.reveal{
+.reveal {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
   transition: all 2s ease;
 }
-.reveal.active{
+.reveal.active {
   transform: translateY(0px);
   opacity: 1;
 }
